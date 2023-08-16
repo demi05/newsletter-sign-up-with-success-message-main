@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <section id="overlay" class="hidden"></section>
+<main class="flex flex-col-reverse md:flex-row md:py-9 md:px-5">
+  <!-- flex item 1 -->
+<section class="px-6 md:w-1/2 md:px-12 md:py-12">
+   <!-- Sign-up form start -->
+  <h1 class="font-RobBold text-darkSlateGrey text-5xl mb-6">Stay Updated!</h1>
+  <p class="font-RobReg mb-5">Join 60,000+ product managers receiving monthly updates on:</p>
+
+  <!-- updates div -->
+  <div class="mb-12">
+    <div class="flex items-center mb-5">
+      <img src="./assets/images/icon-list.svg" alt="check icon" class="mr-4 w-7">
+      <p class="font-RobReg">Product discovery and building what matters</p>
+    </div>
+    <div class="flex items-center mb-5">
+      <img src="./assets/images/icon-list.svg" alt="check icon" class="mr-4 w-7">
+      <p class="font-RobReg">Measuring to ensure updates are a success</p>
+    </div>
+    <div class="flex items-center mb-5">
+      <img src="./assets/images/icon-list.svg" alt="check icon" class="mr-4 w-7">
+      <p class="font-RobReg"> And much more!</p>
+    </div>
+  </div>
+
+  <!-- form div -->
+  <form class="mb-7" novalidate>
+    <div class="felx flex-col">
+      <div class="flex">
+        <p class="font-bold mb-3 text-darkSlateGrey">Email address</p>
+        <p id="error-div" class="ml-auto text-tomato font-bold"></p>
+      </div>
+      <input type="email" placeholder="email@company.com" id="input-field" class="border-grey px-5 py-4 rounded-lg mb-4 hover:cursor-pointer">
+    </div>
+    <a href="#">
+      <div id="subscribe-btn" class="text-center bg-darkSlateGrey text-white font-RobBold px-6 py-4 rounded-lg hover:cursor-pointer hover:bg-gradient-to-r from-tomato to-orange-500">Subscribe to monthly newsletter</div>
+    </a>
+  </form>
+  <!-- Sign-up form end -->
+</section>
+
+<!-- Success message start -->
+<section id="success-sctn" class="success-sctn p-7 bg-white hidden">
+  <div class="image-div">
+    <img src="./assets/images/icon-list.svg" alt="check icon" class="w-12 mb-5">
+  </div>
+  <div class="text-div">
+    <h2 class="font-RobBold text-5xl mb-5">Thanks for subscribing!</h2>
+    <p class="mb-6 font-RobReg">A confirmation email has been sent to <span id="span-el"></span>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <div id="success-btn" class="bg-darkSlateGrey text-white rounded-lg py-3 font-RobBold text-center hover:cursor-pointer hover:bg-gradient-to-r from-tomato to-orange-500">Dismiss message</div>
+    <!-- Success message end -->
+  </div>
+</section>
+
+<section class="img-div mb-9 md:w-1/2 md:px-4">
+  <!-- sign up image -->
+  <picture>
+    <source media="(min-width:550px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+    <img src="./assets/images/illustration-sign-up-mobile.svg" alt="screen and a page">
+  </picture>
+</section>
+</main>
+  
+<footer>
+  <div class="text-center text-darkSlateGrey font-RobReg">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline text-tomato">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/demi05" class="underline text-tomato">Demilade Leshi</a>.
+  </div>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
